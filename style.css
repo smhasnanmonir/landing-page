@@ -1,0 +1,139 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* Navbar CSS */
+
+.navbar-section {
+  padding: 96px 120px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-list {
+  display: flex;
+  gap: 34px;
+  list-style: none;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: black;
+}
+
+nav h1,
+a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #3a3a3a;
+}
+
+nav a {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Header Section CSS */
+
+.header-section {
+  padding: 40px 120px;
+  padding-bottom: 0px;
+}
+
+.header-main-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: end;
+}
+
+.header-section h1,
+.header-section p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 52px;
+  color: #3a3a3a;
+}
+
+.header-section p {
+  font-weight: 600;
+  font-size: 16px;
+  color: #3a3a3a;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+}
+
+.btn-primary {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 16px;
+  padding: 10px;
+  width: 196px;
+  height: 44px;
+  border: none;
+  border-radius: 41px;
+  color: white;
+  background-color: #e02c6d;
+}
+
+.header-img-position{
+    position: relative;
+    top: -80px;
+}
+
+/* Brand Section CSS */
+
+.brand-section{
+    padding: 10px 165px;
+}
+
+.brand-main-div{
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(7,1fr);
+    justify-content: center;
+    align-items: center;
+    row-gap: 50px;
+    border-top: 0.5px solid black;
+    padding: 30px 0px;
+    border-bottom: 0.5px solid black;
+}
+
+/* Popular Collection Section CSS */
+
+.popular-collection{
+    padding: 50px 196px;
+    display: grid;
+    place-content: center;
+}
+
+.popular-collection-div{
+    display: grid;
+    grid-template-columns: repeat(3,329px);
+    gap: 30px;
+}
+
+.item {
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    display: flex;
+    padding: 17px 15px;
+    justify-content: center;
+    border-radius: 7px;
+}
+
+.item-content img{
+    width: 300px;
+    height: 256px;
+    border-radius: 7px;
+}
