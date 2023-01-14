@@ -8,6 +8,7 @@
 
 .navbar-section {
   padding: 96px 120px;
+  padding-bottom: 0px;
 }
 
 .navbar {
@@ -44,13 +45,14 @@ nav a {
 
 .header-section {
   padding: 40px 120px;
-  padding-bottom: 0px;
+  padding-bottom: 70px;
 }
 
 .header-main-div {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: end;
+  align-items: center;
 }
 
 .header-section h1,
@@ -85,11 +87,6 @@ nav a {
   border-radius: 41px;
   color: white;
   background-color: #e02c6d;
-}
-
-.header-img-position {
-  position: relative;
-  top: -80px;
 }
 
 /* Brand Section CSS */
@@ -189,14 +186,16 @@ nav a {
   gap: 16px;
 }
 
-.join-now-content h1,.footer-content h1 {
+.join-now-content h1,
+.footer-content h1 {
   font-family: "Poppins";
   font-weight: 700;
   font-size: 38px;
   color: #0a0826;
 }
 
-.join-now-content p,.footer-content p {
+.join-now-content p,
+.footer-content p {
   font-family: "Poppins";
   font-weight: 700;
   font-size: 16px;
@@ -204,27 +203,27 @@ nav a {
   color: #6c6c6c;
 }
 
-.join-now-btn{
+.join-now-btn {
   border-radius: 0px;
 }
 
 /* Footer Section CSS */
 
-
-.footer{
+.footer {
   margin-top: 100px;
-  background-color: #0A0826;
+  background-color: #0a0826;
   padding: 100px 589px;
 }
 
-.footer-content,.social-logos{
+.footer-content,
+.social-logos {
   display: flex;
   flex-direction: column;
   gap: 3px;
   color: white;
 }
 
-.social-logos{
+.social-logos {
   flex-direction: row;
   gap: 16px;
   margin-top: 17px;
@@ -235,8 +234,136 @@ nav a {
   color: white;
 }
 
-.footer-content p{
+.footer-content p {
   font-weight: 700;
   font-size: 14px;
-  color:#D9DBE1
+  color: #d9dbe1;
+}
+
+/* Mobile Version CSS */
+
+@media screen and (max-width: 576px) {
+  /* Navbar CSS */
+
+  .navbar-section {
+    padding: 20px 15px;
+  }
+
+  .navbar {
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .navbar h1 {
+    font-size: 24px;
+  }
+
+  .nav-list {
+    display: grid;
+    grid-template-columns: repeat(2, 65px);
+    gap: 10px;
+    text-align: center;
+  }
+
+  nav a {
+    font-size: 16px;
+  }
+
+  /* Header CSS */
+
+  .header-section {
+    padding: 0px 18px;
+  }
+
+  .header-main-div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+
+  .header-img {
+    grid-row: 1;
+  }
+
+  .header-content {
+    text-align: center;
+    align-items: center;
+  }
+
+  .header-content h1 {
+    font-size: 28px;
+  }
+  .header-content p {
+    font-size: 14px;
+  }
+
+  .btn-primary {
+    width: 194px;
+    height: 44px;
+  }
+
+  .header-img-size {
+    width: 257px;
+    height: 257px;
+  }
+
+  /* Brand CSS */
+
+  .brand-section {
+    padding: 42px 50px;
+  }
+
+  .brand-main-div {
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 25px;
+    align-items: center;
+  }
+
+  .brand-main-div img {
+    width: 75%;
+  }
+
+  /* Popular Section CSS */
+
+  .popular-collection {
+    padding: 50px 15px;
+    padding-top: 0px;
+  }
+
+  .popular-collection-div {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+  }
+
+  /* Join Now Section CSS */
+
+  .join-now-section {
+    display: grid;
+    place-content: center;
+    margin-top: 0px;
+    padding: 15px 50px;
+  }
+
+  .join-now {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 30px;
+  }
+
+  .join-now-content{
+    grid-row: 1;
+  }
+
+  .gear-img {
+    width: 299px;
+    height: 188px;
+  }
+
+  /* Footer Section CSS */
+
+  .footer{
+    padding: 50px 68px;
+  }
+
 }
